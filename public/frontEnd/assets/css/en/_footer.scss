@@ -1,0 +1,70 @@
+.footer {
+  width: 100%;
+  height: auto;
+  background: $BGColor;
+  padding: 5em 0;
+
+  .l-container {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .column {
+      @include breakpoint-down(medium) {
+        margin-bottom: 3em;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1em;
+
+        @include breakpoint-down(medium) {
+          font-size: 1.5rem;
+        }
+      }
+
+      ul {
+        li {
+          margin-bottom: 0.1em;
+          display: block;
+
+          @include breakpoint-down(medium) {
+            margin-bottom: 0.5em;
+          }
+
+          a {
+            text-decoration: none;
+            font-size: 0.885rem;
+            font-weight: 400;
+            color: $fontColor;
+            transition: all 150ms ease-in;
+
+            @include breakpoint-down(medium) {
+              font-size: 1rem;
+            }
+
+            &:hover {
+              color: $thirdMainColor;
+            }
+          }
+        }
+      }
+
+      .social {
+        display: flex;
+
+        li {
+          margin-right: 1em;
+
+          a {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+<?php
+
+return [
+
+    "Profile Information" => "معلومات الملف الشخصي",
+    "Update your account's profile information and email address." => "قم بتحديث معلومات الملف الشخصي لحسابك وعنوان البريد الإلكتروني",
+    "Photo" => "صورة",
+    "Select A New Photo" => "حدد صورة جديدة",
+    "Remove Photo" => "إزالة الصورة",
+    "Name" => "اسم",
+    "Username" => "اسم المستخدم",
+    "Email" => "البريد الكترونى",
+    "Your email address is unverified." => "لم يتم التحقق من عنوان بريدك الإلكتروني",
+    "Click here to re-send the verification email." => "انقر هنا لإعادة إرسال رسالة التحقق",
+    "A new verification link has been sent to your email address." => "تم إرسال رابط تحقق جديد إلى عنوان بريدك الإلكتروني",
+    "Saved" => "انقذ",
+    "Save" => "حفظ",
+
+    "Update Password" => "تحديث كلمة المرور",
+    "Ensure your account is using a long, random password to stay secure." => "تأكد من أن حسابك يستخدم كلمة مرور طويلة وعشوائية للبقاء آمنًا",
+    "Current Password" => "كلمة المرور الحالية",
+    "New Password" => "كلمة المرور الجديدة",
+    "Confirm Password" => "تأكيد كلمة المرور",
+
+    "Two Factor Authentication" => "توثيق ذو عاملين",
+    "Add additional security to your account using two factor authentication." => "أضف أمانًا إضافيًا إلى حسابك باستخدام المصادقة الثنائية",
+    "Finish enabling two factor authentication." => "الانتهاء من تمكين المصادقة الثنائية",
+    "You have enabled two factor authentication." => "لقد قمت بتمكين المصادقة الثنائية",
+    "You have not enabled two factor authentication." => "لم تقم بتمكين المصادقة الثنائية",
+    "When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone's Google Authenticator application." => "عند تمكين المصادقة الثنائية ، ستتم مطالبتك برمز مميز آمن وعشوائي أثناء المصادقة. يمكنك استرداد هذا الرمز المميز من هاتفك تطبيق جوجل الموثق",
+    "To finish enabling two factor authentication, scan the following QR code using your phone's authenticator application or enter the setup key and provide the generated OTP code." => "لإنهاء تمكين المصادقة الثنائية ، امسح رمز الاستجابة السريعة التالي باستخدام تطبيق المصادقة على هاتفك أو أدخل مفتاح الإعداد وقدم الرمز الذى تم انشاءه",
+    "Two factor authentication is now enabled. Scan the following QR code using your phone's authenticator application or enter the setup key." => "تم تمكين المصادقة الثنائية الآن. امسح رمز الاستجابة السريعة التالي ضوئيًا باستخدام تطبيق المصادقة بهاتفك أو أدخل مفتاح الإعداد",
+    "Setup Key" => "مفتاح الإعداد",
+    "Code" => "شفرة",
+    "Store these recovery codes in a secure password manager. They can be used to recover access to your account if your two factor authentication device is lost." => "قم بتخزين رموز الاسترداد هذه في مدير كلمات مرور آمن. يمكن استخدامها لاستعادة الوصول إلى حسابك في حالة فقد جهاز المصادقة الثنائية الخاص بك",
+    "Enable" => "تمكين",
+    "Regenerate Recovery Codes" => "إعادة إنشاء رموز الاسترداد",
+    "Confirm" => "يتأكد",
+    "Show Recovery Codes" => "إظهار رموز الاسترداد",
+    "Cancel" => "يلغي",
+    "Disable" => "تعطيل",
+
+    "Browser Sessions" => "جلسات المتصفح",
+    "Manage and log out your active sessions on other browsers and devices." => "إدارة جلساتك النشطة وتسجيل الخروج منها على متصفحات وأجهزة أخرى",
+    "If necessary, you may log out of all of your other browser sessions across all of your devices. Some of your recent sessions are listed below; however, this list may not be exhaustive. If you feel your account has been compromised, you should also update your password." => "إذا لزم الأمر ، يمكنك تسجيل الخروج من جميع جلسات المتصفح الأخرى عبر جميع أجهزتك. بعض جلساتك الأخيرة مذكورة أدناه ؛ ومع ذلك ، قد لا تكون هذه القائمة شاملة. إذا شعرت أنه تم اختراق حسابك ، يجب عليك أيضًا تحديث كلمة المرور الخاصة بك",
+    "This device" => "هذا الجهاز",
+    "Last active" => "آخر نشاط",
+    "Log Out Other Browser Sessions" => "تسجيل الخروج جلسات المتصفح الأخرى",
+    "Done." => "فعله",
+    "Please enter your password to confirm you would like to log out of your other browser sessions across all of your devices." => "يرجى إدخال كلمة المرور الخاصة بك لتأكيد رغبتك في تسجيل الخروج من جلسات المتصفح الأخرى عبر جميع أجهزتك",
+    "Password" => "كلمة المرور",
+
+    
+    "Delete Account" => "حذف الحساب",
+    "Permanently delete your account." => "احذف حسابك بشكل دائم",
+    "Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain." => "بمجرد حذف حسابك ، سيتم حذف جميع موارده وبياناته نهائيًا. قبل حذف حسابك ، يرجى تنزيل أي بيانات أو معلومات ترغب في الاحتفاظ بها",
+    "Are you sure you want to delete your account? Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account." => "هل انت متأكد انك تريد حذف حسابك؟ بمجرد حذف حسابك ، سيتم حذف جميع موارده وبياناته نهائيًا. الرجاء إدخال كلمة المرور الخاصة بك لتأكيد رغبتك في حذف حسابك بشكل دائم",
+];

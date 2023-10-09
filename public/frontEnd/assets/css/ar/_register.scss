@@ -1,0 +1,184 @@
+.header-r {
+    width: 100%;
+    height: 6em;
+    margin-bottom: 5em;
+    background: $secondMainColor;
+
+    .l-container {
+        .back_to_home {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            a {
+                display: inline-block;
+                width: 13em;
+                position: relative;
+                color: $darkColor;
+                font-size: 1rem;
+                font-weight: 500;
+                text-transform: capitalize;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 4em;
+                    height: 3px;
+                    background: $darkColor;
+                    transition: all 150ms ease-in;
+                }
+
+                &:hover::before {
+                    left: 1.5em;
+                }
+            }
+        }
+    }
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+
+    .register-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: $secondMainColor;
+        padding: 2.5em 4.5em;
+        border-radius: 0.5em;
+
+        @include breakpoint-down(smaller) {
+            padding: 2.5em 1.5em;
+        }
+
+        @include breakpoint-down(sosmaller) {
+            padding: 2.5em 1em;
+        }
+
+        .register-header {
+            margin-bottom: 2em;
+
+            h1 {
+                font-size: 1.5rem;
+                font-weight: 800;
+                text-transform: uppercase;
+                color: $darkColor;
+                display: inline-block;
+            }
+        }
+
+        .row {
+            width: 30em;
+            margin-bottom: 0.7em;
+
+            @include breakpoint-down(medium) {
+                width: 25em;
+            }
+
+            @include breakpoint-down(smaller) {
+                width: 20em;
+            }
+
+            @include breakpoint-down(sosmaller) {
+                width: 17em;
+            }
+
+            .box-input {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                input {
+                    width: 100%;
+                    height: 3em;
+                    color: $darkColor;
+                    background: $whiteColor;
+                    font-size: 1rem;
+                    text-align: center;
+                    border: 0;
+                    outline: none;
+                    border-radius: 1.5em;
+                    font-weight: 600;
+
+                    &::placeholder {
+                        text-transform: uppercase;
+                        color: $darkColor;
+                        font-weight: 800;
+                        font-size: 1rem;
+
+                        @include breakpoint-down(sosmaller) {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+
+            .box-input-error {
+                width: 100%;
+                min-height: 1.3em;
+                padding: 0 1.5em 0 0;
+
+                p {
+                    color: #800606;
+                    font-size: 0.85rem;
+                    font-weight: 600;
+                }
+            }
+
+            .box-submit {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 1.5em;
+
+                button {
+                    width: 100%;
+                    height: 3em;
+                    background: $darkColor;
+                    border-radius: 1.5em;
+                    color: $whiteColor;
+                    display: inline-block;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    outline: none;
+                    border: 0;
+                    cursor: pointer;
+                    transition: all 150ms ease-in;
+
+                    &:hover {
+                        transform: translateY(-10px);
+                    }
+                }
+            }
+        }
+
+        .sign-in {
+            display: block;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            color: $fontColor;
+            font-size: 0.9rem;
+
+            @include breakpoint-down(sosmaller) {
+                font-size: 0.7rem;
+            }
+
+            a {
+                color: $darkColor;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+<?php
+
+return [
+
+    "Dashboard" => "Dashboard",
+    "welcome back" => "Welcome Back",
+    "view more" => "View More",
+    "all users" => "All Users",
+    "all admins" => "All Admins",
+    "all ads" => "All Ads",
+    "all transactions" => "All Transactions",
+    "Total Ads" => "Total Ads",
+    "users" => "users",
+    "admins" => "admins",
+    "main category" => "main category",
+    "all main category" => "all main category",
+    "sub category" => "sub category",
+    "all sub category" => "all sub category",
+    "brands" => "brands",
+    "all brands" => "all brands",
+    "governorates" => "governorates",
+    "all governorates" => "all governorates",
+    "cities" => "cities",
+    "all cities" => "all cities",
+    "offers" => "offers",
+    "all offers" => "all offers",
+    "transactions" => "transactions",
+    "all transactions" => "all transactions",
+    "pages" => "pages",
+    "ads" => "ads",
+    "Publish Main Category" => "Publish Main Category",
+    "Publish Sub Category" => "Publish Sub Category",
+    "Publish Brand" => "Publish Brand",
+    "Publish Governorate" => "Publish Governorate",
+    "Publish City" => "Publish City",
+    "Publish Offer" => "Publish Offer",
+    "settings" => "settings",
+
+    "NUM" => "NUM",
+    "Name" => "Name",
+    "Email" => "Email",
+    "Actions" => "Actions",
+    "Delete from Admins" => "Delete from Admins",
+    "Edit" => "Edit",
+    "Delete" => "Delete",
+    "Status" => "Status",
+    "Slug" => "Slug",
+    "Edit Ad" => "Edit Ad",
+    "update" => "update",
+    "offer time" => "offer time",
+
+    "street 1 en" => "street 1 by english",
+    "street 1 ar" => "street 1 by arabic",
+    "street 2 en" => "street 2 by english",
+    "street 2 ar" => "street 2 by arabic",
+
+    "name ar" => "name by arabic",
+    "name en" => "name by english",
+
+    "description ar" => "description by arabic",
+    "description en" => "description by english",
+    "certification" => "Certification",
+    'sucessdata'=> 'Updated Sucessfully',
+    'accept_ads'=> 'Accept Ad'
+
+
+];

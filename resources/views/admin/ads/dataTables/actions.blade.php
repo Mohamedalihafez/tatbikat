@@ -1,0 +1,1 @@
+<a href="{{ route("admin.ads.edit", $slug) }}" class="edit btn btn-success btn-sm">{{ __("admin.Edit") }}</a>

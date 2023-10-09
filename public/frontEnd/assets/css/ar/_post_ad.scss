@@ -1,0 +1,237 @@
+.Ad_header {
+    width: 100%;
+    height: 6em;
+    margin-bottom: 5em;
+    background: $secondMainColor;
+
+    .l-container {
+        .back_to_home {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            a {
+                display: inline-block;
+                width: 13em;
+                position: relative;
+                color: $darkColor;
+                font-size: 1rem;
+                font-weight: 500;
+                text-transform: capitalize;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 4em;
+                    height: 3px;
+                    background: $darkColor;
+                    transition: all 150ms ease-in;
+                }
+
+                &:hover::before {
+                    left: 1.5em;
+                }
+            }
+        }
+    }
+}
+
+.post_offer {
+    width: 100%;
+    height: auto;
+
+    .l-container {
+        .post_offer_header {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 4em;
+
+            h1 {
+                font-size: 2rem;
+                text-transform: uppercase;
+                color: $darkColor;
+                font-weight: 800;
+
+                @include breakpoint-down(sosmaller) {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .post_offer_content {
+            padding: 2em;
+            border: 1px solid $darkColor;
+            border-radius: 1em;
+            margin-bottom: 3em;
+
+            @include breakpoint-down(sosmaller) {
+                padding: 2em 1em;
+            }
+
+            .post_offer_content-header {
+                display: block;
+                margin-bottom: 1.5em;
+                border-bottom: 2px solid $darkColor;
+
+                h2 {
+                    font-size: 1.3rem;
+                    color: $darkColor;
+                    text-transform: uppercase;
+                    font-weight: 600;
+
+                    @include breakpoint-down(sosmaller) {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+
+            .row {
+                display: flex;
+
+                @include breakpoint-down(smaller) {
+                    flex-direction: column;
+                }
+
+                .categories {
+                    width: 35em;
+                    margin-left: 1em;
+
+                    @include breakpoint-down(medium) {
+                        width: 30em;
+                    }
+
+                    @include breakpoint-down(smaller) {
+                        width: 100%;
+                        margin-left: 0;
+                        margin-bottom: 1em;
+                        border-bottom: 3px solid #000;
+                    }
+
+                    .category {
+                        height: 3em;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        padding: 0 1em;
+                        border-bottom: 1px solid $darkColor;
+                        transition: all 150ms ease-in;
+                        cursor: pointer;
+
+                        @include breakpoint-down(medium) {
+                            height: 3.5em;
+                        }
+
+                        @include breakpoint-down(smaller) {
+                            height: 4em;
+                        }
+
+                        &:hover {
+                            background: $secondMainColor;
+                        }
+
+                        .category_icon {
+                            display: inline-block;
+                            font-size: 2rem;
+                            color: $darkColor;
+                            margin-left: 1em;
+                            line-height: 1;
+
+                            @include breakpoint-down(medium) {
+                                margin-left: 0.5em;
+                            }
+
+                            @include breakpoint-down(smaller) {
+                                margin-left: 0.3em;
+                                font-size: 1.5rem;
+                            }
+                        }
+
+                        .category_body {
+                            font-size: 0.885rem;
+                            font-weight: 400;
+                            color: $darkColor;
+                            text-transform: capitalize;
+
+                            @include breakpoint-down(medium) {
+                                font-size: 0.8rem;
+                                padding-left: 0.7rem;
+                            }
+                        }
+
+                        .category_icon-arrow {
+                            position: absolute;
+                            left: 0;
+                            line-height: 1;
+                            font-size: 2.5em;
+
+                            @include breakpoint-down(smaller) {
+                                font-size: 1.5em;
+                            }
+                        }
+                    }
+
+                    .active {
+                        background: $secondMainColor;
+                    }
+                }
+
+                .sub_categories-content {
+                    width: 25em;
+
+                    @include breakpoint-down(medium) {
+                        width: 23em;
+                    }
+
+                    @include breakpoint-down(smaller) {
+                        width: 75%;
+                    }
+
+                    .sub_categories {
+                        display: none;
+
+                        .sub_category {
+                            height: 3em;
+                            border-bottom: 1px solid $darkColor;
+
+                            @include breakpoint-down(medium) {
+                                height: 3.5em;
+                            }
+
+                            @include breakpoint-down(smaller) {
+                                height: 3em;
+                            }
+
+                            a {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                font-size: 0.885rem;
+                                font-weight: 400;
+                                padding: 0 1em;
+                                color: $darkColor;
+                                text-transform: capitalize;
+                                transition: all 150ms ease-in;
+
+                                @include breakpoint-down(medium) {
+                                    font-size: 0.8rem;
+                                }
+
+                                &:hover {
+                                    background: $secondMainColor;
+                                }
+                            }
+                        }
+                    }
+
+                    .active {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

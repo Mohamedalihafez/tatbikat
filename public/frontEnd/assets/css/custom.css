@@ -1,0 +1,29 @@
+.header .header-inputs .l-container .form .form_content .search-box button {
+    background: #ffb600 !important;
+    border-radius: 5px !important;
+}
+.header .header-inputs .l-container .links .sign-in a {
+    background: #ffb600 !important;
+    border:2px solid #ffb600 !important;
+}
+.header .header-inputs .l-container .links .sell a {
+border:3px solid #ffb600 !important;
+}
+.search-box {
+    border:1.4px solid #ffb600 !important;
+}
+.categories-drop {
+    border:1.4px solid #ffb600 !important;
+}
+.header .nav {
+    box-shadow:0px 0px 0px 1px #ffb600 !important;
+}
+.header .nav .l-container ul li:hover {
+    color:#ffb600 !important;
+}
+.header .nav .l-container ul li .submenu {
+    width:10rem !important;
+}
+.navbar-expand-xl .navbar-nav .dropdown-menu {
+    margin-right :-120px;
+}

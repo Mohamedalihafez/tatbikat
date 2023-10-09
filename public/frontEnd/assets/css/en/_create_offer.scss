@@ -1,0 +1,238 @@
+.Ad_header {
+    width: 100%;
+    height: 6em;
+    margin-bottom: 5em;
+    background: $secondMainColor;
+
+    .l-container {
+        .back_to_home {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            a {
+                display: inline-block;
+                width: 13em;
+                position: relative;
+                color: $darkColor;
+                font-size: 1rem;
+                font-weight: 500;
+                text-transform: capitalize;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    width: 4em;
+                    height: 3px;
+                    background: $darkColor;
+                    transition: all 150ms ease-in;
+                }
+
+                &:hover::before {
+                    right: 1.5em;
+                }
+            }
+        }
+    }
+}
+
+.create_offer {
+    width: 100%;
+    height: auto;
+
+    .l-container {
+        .create_offer_header {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 4em;
+
+            h1 {
+                font-size: 2rem;
+                text-transform: uppercase;
+                color: $darkColor;
+                font-weight: 800;
+
+                @include breakpoint-down(medium) {
+                    font-size: 1.5rem;
+                }
+
+                @include breakpoint-down(sosmaller) {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        .create_offer_content {
+            padding: 2em;
+            border: 1px solid $darkColor;
+            border-radius: 1em;
+            margin-bottom: 3em;
+
+            .create_offer_content-header {
+                display: block;
+                margin-bottom: 1.5em;
+                border-bottom: 2px solid $darkColor;
+
+                h2 {
+                    font-size: 1.3rem;
+                    color: $darkColor;
+                    text-transform: uppercase;
+                    font-weight: 600;
+
+                    @include breakpoint-down(medium) {
+                        font-size: 1.1rem;
+                    }
+
+                    @include breakpoint-down(sosmaller) {
+                        font-size: 0.9rem;
+                    }
+                }
+
+                p {
+                    @include breakpoint-down(sosmaller) {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+
+            #form {
+                display: block;
+
+                .head_form {
+                    margin-bottom: 1rem;
+
+                    h2 {
+                        font-size: 1.25rem;
+                        text-transform: uppercase;
+                        font-weight: 700;
+
+                        @include breakpoint-down(medium) {
+                            font-size: 1rem;
+                        }
+
+                        @include breakpoint-down(sosmaller) {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+
+                .box_input {
+                    width: 100%;
+                    min-height: 4rem;
+                    background: transparent;
+                    margin-bottom: 1rem;
+
+                    label {
+                        font-size: 1rem;
+                        font-weight: 600;
+                        text-transform: uppercase;
+
+                        @include breakpoint-down(sosmaller) {
+                            font-size: 0.7rem;
+                        }
+                    }
+
+                    .radio_method {
+                        min-width: 3rem;
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 0.5rem;
+                        padding: 0.5rem;
+                        text-transform: capitalize;
+                        border: 1px solid $darkColor;
+                        border-radius: 0.3rem;
+                        font-size: 0.8rem;
+                        font-weight: 700;
+                    }
+
+                    .input {
+                        width: 100%;
+                        height: 3rem;
+                        border: 1px solid $darkColor;
+                        border-radius: 0.5rem;
+                        background: transparent;
+                        padding: 0 1rem;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        outline: none;
+                    }
+
+                    button {
+                        background: $darkColor;
+                        color: $whiteColor;
+                        padding: 0.5rem 1rem;
+                        text-transform: capitalize;
+                        outline: none;
+                        border: 0;
+                        font-size: 1rem;
+                        cursor: pointer;
+                        font-weight: 700;
+                    }
+
+                    .custom-file-input {
+                        position: relative;
+                    }
+
+                    .custom-file-input::-webkit-file-upload-button {
+                        position: absolute;
+                        width: 15rem;
+                        height: 100%;
+                        left: 0;
+                        color: $darkColor;
+                        font-weight: 700;
+                        cursor: pointer;
+
+                        @include breakpoint-down(sosmaller) {
+                            width: 8rem;
+                            font-size: 0.8rem;
+                        }
+                    }
+
+                    select {
+                        width: 100%;
+                        height: 3rem;
+                        border: 1px solid $darkColor;
+                        border-radius: 0.5rem;
+                        background: transparent;
+                        padding: 0 1rem;
+                        font-size: 0.885rem;
+                        font-weight: 400;
+                        outline: none;
+                    }
+
+                    textarea {
+                        min-width: 100%;
+                        max-width: 100%;
+                        min-height: 7rem;
+                        max-height: 7rem;
+                        border: 1px solid $darkColor;
+                        border-radius: 0.5rem;
+                        background: transparent;
+                        padding: 0.5rem 1rem;
+                        font-size: 0.985rem;
+                    }
+
+                    .error_message {
+                        width: 100%;
+                        min-height: 1.25rem;
+
+                        p {
+                            color: #af0000;
+                            font-size: 0.8rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .border {
+                    width: 100%;
+                    height: 4px;
+                    margin: 2rem 0;
+                }
+            }
+        }
+    }
+}
